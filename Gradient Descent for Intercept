@@ -1,0 +1,11 @@
+def get_gradient_at_b(x, y, m, b):
+  
+  diff = 0
+ 
+  for i in range(len(x)):
+    diff += y[i] - (m * x[i] + b)    
+  #return diff
+  
+  b_gradient = -2/len(x) * diff
+
+  return b_gradient
